@@ -1,0 +1,176 @@
+{% extends 'jiajiale/base.html' %}
+
+{% load static from staticfiles %}
+{% block linkscript %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/main.css'%}" />
+    <script type="text/javascript" charset="utf-8" src="{% static 'main/js/main.js' %}"></script>
+{% endblock linkscript %}
+
+{% block base %}
+<div id="main">
+    <!--轮播图-->
+    <div id="banner">
+        <div class="container">
+            <ul>
+                <li class="cloth"> 商品分类</li>
+                {% for item in clothesTypeList %}
+                <li class="cloth"><a href="#{{item.typeName}}">{{item.typeName}}</a></li>
+                {% endfor %}
+            </ul>
+            <div id="wrapper">
+                {% for item in wheelList %}
+                    <img src="/{{item.img}}" alt="" class="picture active">
+                {%endfor%}
+                <ul class="pointList">
+                    <li class="point active" data-index="0"></li>
+                    <li class="point" data-index="1"></li>
+                    <li class="point" data-index="2"></li>
+                    <li class="point" data-index="3"></li>
+                </ul>
+                <buttom class="btn" id="goPre"><img src="/static/main/img/a1.png" alt=""></buttom>
+                <buttom class="btn" id="goNext"><img src="/static/main/img/a2.png" alt=""></buttom>
+            </div>
+        </div>
+    </div>
+    <!--新品上线推荐部分-->
+    <div id="recommend">
+        <div class="container">
+            <div class="recommend_goods"><h2>精品0o0推荐</h2></div>
+            <hr size="3px" noshade=true color="red"/>
+            <ul>
+                {% for item in recommendList %}
+                <li>
+                    <a href="#">
+                        <div>
+                        <img src="/{{item.img}}" alt="图片加载失败">
+                        </div>
+                        <p>名称:&nbsp;{{item.name}}</p>
+                        <p>库存:&nbsp;{{item.stockNum}}</p>
+                        <p class="money">&yen;:&nbsp;{{item.goodsPrice}}</p>
+                    </a>
+                </li>
+                <li class="line"></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <!--猜你喜欢衣服展示-->
+    <div id="clothes">
+        <div class="container">
+            <div class="clothes_goods"><h2>猜你^-^喜欢</h2></div>
+            <!--上衣推荐-->
+            <div id="上衣">
+                <div class="box">
+                    <strong>上衣</strong><span>|</span>
+                    {% for item in childList0 %}
+                    <a href="#">{{item.childName}}</a>
+                    {% endfor %}
+                    <a href="#" class="more">查看更多></a>
+                </div>
+                <hr size="3px" noshade=true color="red"/>
+                <ul>
+                    {% for item in jacketList %}
+                    <li>
+                        <a href="/detail/0/{{item.trackId}}/">
+                            <div>
+                            <img src="/{{item.img}}" alt="图片加载失败">
+                            </div>
+                            <p>名称:&nbsp;{{item.name}}</p>
+                            <p>好评:&nbsp;{{item.praiseNum}}</p>
+                            <p class="money">&yen;:&nbsp;{{item.goodsPrice}}</p>
+                        </a>
+                    </li>
+                    <li class="line"></li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <!--下装推荐-->
+            <div class="titleDiv">
+                <div id="下装">
+                    <div class="box">
+                        <strong>下装</strong><span>|</span>
+                        {% for item in childList1 %}
+                        <a href="#">{{item.childName}}</a>
+                        {% endfor %}
+                        <a href="#" class="more">查看更多></a>
+                    </div>
+                    <hr size="3px" noshade=true color="red"/>
+                    <ul>
+                        {% for item in pantsList %}
+                        <li>
+                            <a href="/detail/1/{{item.trackId}}/">
+                                <div>
+                                <img src="/{{item.img}}" alt="图片加载失败">
+                                </div>
+                                <p>名称:&nbsp;{{item.name}}</p>
+                                <p>好评:&nbsp;{{item.praiseNum}}</p>
+                                <p class="money">&yen;:&nbsp;{{item.goodsPrice}}</p>
+                            </a>
+                        </li>
+                        <li class="line"></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <!--鞋推荐-->
+            <div class="titleDiv">
+                <div id="鞋">
+                    <div class="box">
+                        <strong>鞋</strong><span>|</span>
+                        {% for item in childList2 %}
+                        <a href="#">{{item.childName}}</a>
+                        {% endfor %}
+                        <a href="#" class="more">查看更多></a>
+                    </div>
+                    <hr size="3px" noshade=true color="red"/>
+                    <ul>
+                        {% for item in shoesList %}
+                        <li>
+                            <a href="/detail/2/{{item.trackId}}/">
+                                <div>
+                                <img src="/{{item.img}}" alt="图片加载失败">
+                                </div>
+                                <p>名称:&nbsp;{{item.name}}</p>
+                                <p>好评:&nbsp;{{item.praiseNum}}</p>
+                                <p class="money">&yen;:&nbsp;{{item.goodsPrice}}</p>
+                            </a>
+                        </li>
+                        <li class="line"></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <!--其它推荐-->
+            <div class="titleDiv">
+                <div id="其它">
+                    <div class="box">
+                        <strong>其它</strong><span>|</span>
+                        {% for item in childList3 %}
+                        <a href="#">{{item.childName}}</a>
+                        {% endfor %}
+                        <a href="#" class="more">查看更多></a>
+                    </div>
+                    <hr size="3px" noshade=true color="red"/>
+                    <ul>
+                        {% for item in othersList %}
+                        <li>
+                            <a href="/detail/3/{{item.trackId}}/">
+                                <div>
+                                <img src="/{{item.img}}" alt="图片加载失败">
+                                </div>
+                                <p>名称:&nbsp;{{item.name}}</p>
+                                <p>好评:&nbsp;{{item.praiseNum}}</p>
+                                <p class="money">&yen;:&nbsp;{{item.goodsPrice}}</p>
+                            </a>
+                        </li>
+                        <li class="line"></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock base %}

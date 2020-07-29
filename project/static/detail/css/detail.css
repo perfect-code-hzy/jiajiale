@@ -1,0 +1,178 @@
+/* 把标签默认的间距设为0 */
+body,ul,ol,p,h1,h2,h3,h4,h5,h6,dl,dd,select,input,textarea,form{
+	margin:0;
+	padding:0
+}
+
+/* 让h标签文字大小继承body的文字设置 */
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;
+}
+
+/* 去掉列表默认的图标 */
+ul,ol{
+	list-style:none;
+}
+
+/* 去掉em默认的斜体 */
+em{
+	font-style: normal;
+}
+
+/* 去掉a标签默认的下划线 */
+a{
+	text-decoration:none;
+}
+
+
+/* 去掉加链接时产生的框线 */
+img{
+	border:0;
+}
+
+/* 清除浮动 */
+.clearfix:before,.clearfix:after{
+	content:"";
+	display:table
+}
+.clearfix:after{
+	clear:both;
+}
+.clearfix{
+	zoom:1
+}
+
+/* 浮动 */
+.left{
+	float:left
+}
+.right{
+	float:right
+}
+
+
+#detail .classification{
+	margin-left:130px;
+}
+#detail .classification a{
+	color:#37ab40;
+}
+
+/* 商品详情样式 */
+.goods_detail_con{
+	width:1198px;
+	height:398px;
+	border:1px solid #ededed;
+	margin:0 auto 20px;
+}
+
+.goods_detail_pic{
+	width:350px;
+	height:350px;
+	margin:24px 0 0 24px;
+}
+.goods_detail_list{
+	width:730px;
+	height:350px;
+	margin:24px 24px 0 0;
+}
+.goods_detail_list h3{
+	font-size:24px;
+	line-height:24px;
+	color:#666;
+	font-weight:normal;
+}
+.goods_detail_list p{
+	color:#666;
+	line-height:40px;
+}
+.prize_bar{
+	height:72px
+	background-color:#fff5f5;
+	line-height:72px;
+}
+.prize_bar .show_pirze{
+	font-size:20px;
+	color:#ff3e3e;
+	padding-left:20px
+}
+.prize_bar .show_pirze em{
+	font-style:normal;
+	font-size:36px;
+	padding-left:10px
+}
+.prize_bar .show_unit{
+	padding-left:150px
+}
+.goods_num{
+	height:52px;
+	margin-top:19px;
+}
+.goods_num .num_name{
+	width:70px;
+	height:52px;
+	line-height:52px;
+}
+.goods_num .num_add{
+	width:75px;
+	height:50px;
+	border:1px solid #dddddd
+}
+.goods_num .num_add input{
+	width:49px;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+	border:0px;
+	outline:none;
+	font-size:14px;
+	color:#666
+}
+.goods_num .num_add .add, .goods_num .num_add .minus{
+	width:25px;line-height:25px;
+	text-align:center;
+	border-left:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	color:#666;
+	font-size:14px
+}
+.goods_num .num_add .minus{
+	border-bottom:0px
+}
+.goods_num .show_stock{
+	padding-left:273px;
+	line-height:50px;
+}
+
+
+.total em{
+	font-style:normal;
+	color:#ff3e3e;
+	font-size:18px
+}
+
+.operate_btn{
+	height:40px;
+	margin-top:20px;
+	font-size:0;
+	position:relative;
+}
+.operate_btn .buy_btn,  .operate_btn .add_cart{
+	display:inline-block;
+	width:178px;
+	height:38px;
+	border:1px solid #c40000;
+	font-size:14px;
+	color:#c40000;
+	line-height:38px;
+	text-align:center;
+	background-color:#ffeded;
+}
+.operate_btn .add_cart{
+	background-color:#c40000;
+	color:#fff;
+	margin-left:30px;
+	position:relative;
+	z-index:10;
+}

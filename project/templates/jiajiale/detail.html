@@ -1,0 +1,51 @@
+{% extends 'jiajiale/base.html' %}
+
+{% load static from staticfiles %}
+{% block linkscript %}
+    <link rel="stylesheet" type="text/css" href="{% static 'detail/css/detail.css'%}" />
+    <script type="text/javascript" charset="utf-8" src="{% static 'detail/js/detail.js' %}"></script>
+{% endblock linkscript %}
+
+
+{% block base %}
+<div id="detail">
+	<div class="classification">
+		<a>全部分类</a>
+		<span>>></span>
+		<a>{{childName}}</a>
+		<span>>></span>
+		<a>商品详情</a>
+	</div>
+
+	<div class="goods_detail_con clearfix">
+		<div class="goods_detail_pic left"><img width="300px" src="/{{goods.img}}"></div>
+
+		<div class="goods_detail_list right">
+			<h3>{{ goods.name }}</h3>
+			<p>简介：{{ goods.briefIntro }}</p>
+			<div class="prize_bar">
+				<span class="show_pirze">仅要¥<em>{{ goods.goodsPrice }}</em>，就能带回家</span>
+				<span class="show_unit">地  址：{{ goods.address }}</span>
+			</div>
+			<div class="goods_num clearfix">
+				<div class="num_name left">数 量：</div>
+				<div class="num_add left">
+					<input type="text" class="num_show left" value="1">
+					<a href="javascript:;" class="add right">+</a>
+					<a href="javascript:;" class="minus right">-</a>
+				</div>
+				<span class="show_stock">库  存：{{ goods.stockNum }}</span>
+			</div>
+			<p class="praise">好评数：{{goods.praiseNum}}</p>
+			<p class="total">总价：<em>{{ goods.goodsPrice }}</em></p>
+			<div class="operate_btn">
+				{% csrf_token %}
+				<a href="javascript:;" class="buy_btn">立即购买</a>
+				<a href="javascript:;" track_id="{{ goods.trackId }}" flag = "{{flag}}" class="add_cart"
+				   id="add_cart">加入购物车</a>
+			</div>
+		</div>
+	</div>
+	<div class="add_jump"></div>
+</div>
+{% endblock base %}

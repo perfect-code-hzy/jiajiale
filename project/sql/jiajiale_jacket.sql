@@ -1,0 +1,10 @@
+INSERT INTO `jiajiale_jacket` VALUES (1, '罗蒙男士短袖衬衫', 'static/images/goods/1.jpg', 211, 21, '跳楼大减价，买买买！！！', '北京', 21, '精选', 1, '衬衫', '22201', '11122200');
+INSERT INTO `jiajiale_jacket` VALUES (2, 'KIN DON/金盾磨毛全棉长袖衬衫', 'static/images/goods/2.jpg', 213, 31, '跳楼大减价，买买买！！！', '河南', 54, '精选', 1, '衬衫', '22201', '11122201');
+INSERT INTO `jiajiale_jacket` VALUES (3, '秋冬季男士加绒无袖V领毛衣马甲针织衫背', 'static/images/goods/7jpg.jpg', 453, 666, '跳楼大减价，买买买！！！', '河南', 14, '精选', 1, '背心', '22202', '11122202');
+INSERT INTO `jiajiale_jacket` VALUES (4, '莫代尔黑色运动背心男士潮流修身型吊带', 'static/images/goods/9.jpg', 145, 23, '跳楼大减价，买买买！！！', '上海', 40, '精选', 1, '背心', '22202', '11122203');
+INSERT INTO `jiajiale_jacket` VALUES (5, '中袖t恤女纯棉打底衫春装新款短款上衣', 'static/images/goods/15.jpg', 237, 78, '跳楼大减价，买买买！！！', '上海', 26, '精选', 1, 'T-shirt', '22203', '11122204');
+INSERT INTO `jiajiale_jacket` VALUES (6, '米色外套男2019秋季新款男士工装夹克潮', 'static/images/goods/17.jpg', 999, 89, '跳楼大减价，买买买！！！', '陕西', 99, '精选', 1, '夹克', '22204', '11122205');
+INSERT INTO `jiajiale_jacket` VALUES (7, '很仙的超火cec内搭网红毛衣女2019新', 'static/images/goods/24.jpg', 998, 121, '跳楼大减价，买买买！！！', '北京', 318, '精选', 1, '毛衣', '22205', '11122206');
+INSERT INTO `jiajiale_jacket` VALUES (8, '黑西服套装男韩版修身新郎伴郎职业装商', 'static/images/goods/30.jpg', 666, 56, '跳楼大减价，买买买！！！', '河南', 227, '精选', 1, '西服', '22206', '11122207');
+INSERT INTO `jiajiale_jacket` VALUES (9, '2019冬季新款韩版女装棉服外套面包服宽', 'static/images/goods/32.jpg', 1111, 522, '跳楼大减价，买买买！！', '北京', 521, '精选', 1, '羽绒服', '22207', '11122208');
+INSERT INTO `jiajiale_jacket` VALUES (10, '冬季羽绒服男中长款2019新款韩版潮流学', 'static/images/goods/33.jpg', 521, 520, '跳楼大减价，买买买！！！', '上海', 521, '精选', 1, '羽绒服', '22207', '11122209');

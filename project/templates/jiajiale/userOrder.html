@@ -1,0 +1,60 @@
+{% extends 'jiajiale/userBase.html' %}
+
+
+{% load static from staticfiles %}
+{% block linkscript %}
+	<link rel="stylesheet" type="text/css" href="{% static 'userBase/css/userBase.css'%}" />
+    <script type="text/javascript" charset="utf-8" src="{% static 'userBase/js/userBase.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'userOrder/css/userOrder.css'%}" />
+    <script type="text/javascript" charset="utf-8" src="{% static 'userOrder/js/userOrder.js' %}"></script>
+{% endblock linkscript %}
+
+{% block rightContent %}
+<div class="rightContent clearfix">
+	<h3 class="common_title2">全部订单</h3>
+	{% for order in order_page %}
+	<ul class="order_list_th w978 clearfix">
+		<li class="col01">{{ order.create_time }}</li>
+		<li class="col02">订单号：{{ order.orderId }}</li>
+		<li class="col02 stress">未支付</li>
+	</ul>
+	{% csrf_token %}
+	<table class="order_list_table w980">
+		<tbody>
+			<tr>
+				<td width="80%">
+					{% for order_good in order.order_goods %}
+					<ul class="order_goods_list clearfix">
+						<li class="col01"><a href="#">
+									<img src="/{{ order_good.img }}"></a>
+						</li>
+						<li class="col02">{{ order_good.name }}<em>{{ order_good.price }}元</em>
+						</li>
+						<li class="col03">{{ order_good.count }}</li>
+						<li class="col04">{{ order_good.amount }}元</li>
+					</ul>
+					{% endfor %}
+				</td>
+				<td width="10%">{{ order.total_price }}元(含运费{{ order.transit_price }}元)</td>
+				<td width="10%"><a href="#" status="{{ order.order_status }}" class="oper_btn">去付款</a></td>
+			</tr>
+		</tbody>
+	</table>
+	{% endfor %}
+	<div class="pagenation">
+		{% if order_page.has_previous %}
+		<a href="/userOrder/{{order_page.previous_page_number}}/"><上一页</a>
+		{% endif %}
+		{% for page_index in pages %}
+			{% if page_index == order_page.number %}
+				<a href="/userOrder/{{page_index}}/" class="active">{{ page_index }}</a>
+			{% else %}
+				<a href="/userOrder/{{page_index}}/">{{ page_index }}</a>
+			{% endif %}
+		{% endfor %}
+		{% if order_page.has_next %}
+		<a href="/userOrder/{{order_page.next_page_number}}/">下一页></a>
+		{% endif %}
+	</div>
+</div>
+{% endblock rightContent %}

@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document */
+/*去掉内边距和外边距*/
+*{
+	margin:0;
+	padding:0;
+}
+/*去掉列表的标识*/
+ol,ul{
+	list-style-type:none;
+}
+/*超链接颜色设为黑色，下划线去掉*/
+a{
+	color:#000;
+	text-decoration:none;
+}
+/*左浮动、和右浮动*/
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.container{
+	width:1280px;
+	border:1px solid #f00;
+	margin:0px auto;
+}
+
+
+/*设置轮播图区域的样式*/
+#banner{
+	height:320px;
+}
+#banner ul{
+	margin-top:20px;
+	float:left;
+}
+#banner .cloth{
+	font-size:24px;
+	padding:10px 150px;
+	display:block;
+	text-align:center;
+}
+#wrapper {
+	left:320px;
+	width: 700px;
+	height: 300px;
+	position:relative;
+}
+#wrapper .picture{
+	width:700px;
+	height:300px;
+	left:0px;
+	position:absolute;
+    transition: all 0.8s;
+}
+#wrapper .btn{
+	position:absolute;
+	top:125px;
+	z-index: 100;
+	opacity:0;
+}
+#wrapper:hover .btn{
+	opacity: 1;
+	transition: all 0.6s;
+}
+#wrapper .btn img{
+	width: 50px;
+	height: 50px;
+	opacity:0.7;
+	cursor:pointer;
+}
+.picture.active{
+	z-index:50;
+}
+#goPre{
+	left: 0px;
+}
+#goNext{
+	right:0px;
+}
+#wrapper .pointList{
+	width:200px;
+	height:100px;
+	padding:0px;
+	position:absolute;
+	z-index: 300;
+	top:190px;
+	left:300px;
+}
+#wrapper .point {
+	width: 8px;
+	height: 8px;
+	border: 2px solid rgba(255,255,255,0.8);
+	border-radius: 100%;
+	background-color: rgba(0,0,0,0.4);
+	cursor:pointer;
+	float:left;
+	right:15px;
+	margin-right:15px;
+}
+#wrapper .point.active{
+	background-color: rgba(243,149,176,1);
+}
+
+/*设置新品推荐区域的样式*/
+#recommend{
+	height:400px;
+}
+#recommend .recommend_goods h2{
+	text-align:center;
+	letter-spacing:20px;
+	margin:20px;
+}
+#recommend ul{
+	margin-left:120px;
+}
+#recommend li{
+	width:200px;
+	height:310px;
+	margin-top:10px;
+	float:left;
+	background-color:rgba(245,245,245,1)
+}
+#recommend li:hover{
+	border-bottom:4px solid #F00;
+	transform:translateY(-10px);
+}
+#recommend li img{
+	width:200px;
+	height:200px;
+	margin-bottom:5px;
+}
+#recommend li p{
+	text-align:center;
+	margin-bottom:5px;
+}
+#recommend .line{
+	width:0px;
+	height:200px;
+	border-right:1px solid #FFF;
+	margin:0px 40px;
+}
+
+/*设置猜你喜欢区域的样式*/
+#clothes{
+	height:2500px;
+	display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+#clothes .clothes_goods h2{
+	text-align:center;
+	letter-spacing:20px;
+	margin-top:20px;
+}
+#clothes strong{
+	font-size:30px;
+	margin-right:20px;
+}
+#clothes .box a{
+	padding-left:15px;
+}
+#clothes .more{
+	float:right;
+	margin-top:18px;
+}
+#clothes ul{
+	margin-left:60px;
+}
+#clothes li{
+	width:200px;
+	height:310px;
+	margin-top:10px;
+	float:left;
+	background-color:rgba(245,245,245,1)
+	flex: 0 0 33.333333%;
+    box-sizing: border-box;
+}
+#clothes li:hover{
+	border-bottom:4px solid #F00;
+	transform:translateY(-10px);
+}
+#clothes li img{
+	width:200px;
+	height:200px;
+	margin-bottom:5px;
+}
+#clothes li p{
+	text-align:center;
+	margin-bottom:5px;
+}
+#clothes .line{
+	width:0px;
+	height:200px;
+	border-right:1px solid #FFF;
+	margin:0px 20px;
+}
+#clothes .titleDiv{
+	padding-top:650px;
+}

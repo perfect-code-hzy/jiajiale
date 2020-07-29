@@ -1,0 +1,23 @@
+{% extends 'jiajiale/userBase.html' %}
+
+
+{% load static from staticfiles %}
+{% block linkscript %}
+	<link rel="stylesheet" type="text/css" href="{% static 'userBase/css/userBase.css'%}" />
+    <script type="text/javascript" charset="utf-8" src="{% static 'userBase/js/userBase.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'userInfo/css/userInfo.css'%}" />
+    <script type="text/javascript" charset="utf-8" src="{% static 'userInfo/js/userInfo.js' %}"></script>
+{% endblock linkscript %}
+
+{% block rightContent %}
+<div class="rightContent">
+	<div class="basedInfo">
+	<h3 class="title">基本信息</h3>
+		<ul class="infoList">
+			<li><span>用户名：</span>{{user.userAccount}}</li>
+			<li><span>邮箱：</span>{{user.userMail}}</li>
+			<li><span>联系地址：</span>河南省 信阳市 商城县 李集乡</li>
+		</ul>
+	</div>
+</div>
+{% endblock rightContent %}

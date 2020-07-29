@@ -1,0 +1,10 @@
+INSERT INTO `jiajiale_shoes` VALUES (1, '高跟鞋冬季2018新款秋新娘鞋尖头白色细', 'static/images/goods/61.jpg', 221, 31, '跳楼大减价，买买买！！！', '上海', 311, '精选', 1, '高跟鞋', '22221', '11122220');
+INSERT INTO `jiajiale_shoes` VALUES (2, '法式少女香槟色婚鞋女2019新款新娘鞋水', 'static/images/goods/65.jpg', 221, 21, '跳楼大减价，买买买！！！', '上海', 213, '精选', 1, '高跟鞋', '22221', '11122221');
+INSERT INTO `jiajiale_shoes` VALUES (3, '李宁篮球鞋男鞋高帮驭帅11裂变3韦德运动', 'static/images/goods/67.jpg', 678, 13, '跳楼大减价，买买买！！！', '北京', 18, '精选', 1, '篮球鞋', '22222', '11122222');
+INSERT INTO `jiajiale_shoes` VALUES (4, '风火轮战靴 爆款篮球鞋', 'static/images/goods/69.jpg', 213, 13, '跳楼大减价，买买买！！！', '陕西', 31, '精选', 1, '篮球鞋', '22222', '11122223');
+INSERT INTO `jiajiale_shoes` VALUES (5, '棉拖鞋女亚麻布春秋季儿童室内家居家用', 'static/images/goods/71.jpg', 66, 13, '跳楼大减价，买买买！！', '河南', 231, '精选', 1, '拖鞋', '22223', '11122224');
+INSERT INTO `jiajiale_shoes` VALUES (6, '秋冬季居家棉拖鞋情侣男女室内家居毛绒', 'static/images/goods/75.jpg', 88, 32, '跳楼大减价，买买买！！', '上海', 23, '精选', 1, '拖鞋', '22223', '11122225');
+INSERT INTO `jiajiale_shoes` VALUES (7, '2019新款秋季男士潮鞋皮面百搭冬天板鞋', 'static/images/goods/76.jpg', 231, 46, '跳楼大减价，买买买！！！', '上海', 210, '精选', 1, '休闲鞋', '22224', '11122226');
+INSERT INTO `jiajiale_shoes` VALUES (8, '马丁鞋男夏季透气英伦鞋子男潮鞋真皮大', 'static/images/goods/78.jpg', 3132, 121, '跳楼大减价，买买买！！！', '北京', 31, '精选', 1, '休闲鞋', '22224', '11122227');
+INSERT INTO `jiajiale_shoes` VALUES (9, '安踏男鞋运动鞋2019秋冬季新款革面跑步', 'static/images/goods/81.jpg', 965, 754, '跳楼大减价，买买买！！！', '陕西', 21, '精选', 1, '运动鞋', '22225', '11122228');
+INSERT INTO `jiajiale_shoes` VALUES (10, '2019新款秋季男士潮鞋皮面百搭冬天板鞋', 'static/images/goods/84.jpg', 231, 21, '跳楼大减价，买买买！！！', '北京', 45, '精选', 1, '运动鞋', '22225', '11122229');

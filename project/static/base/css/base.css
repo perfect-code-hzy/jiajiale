@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+/*去掉内边距和外边距*/
+*{
+	margin:0;
+	padding:0;
+}
+/*去掉列表的标识*/
+ol,ul{
+	list-style-type:none;
+}
+/*超链接颜色设为黑色，下划线去掉*/
+a{
+	color:#000;
+	text-decoration:none;
+}
+/*左浮动、和右浮动*/
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.container{
+	width:1280px;
+	border:1px solid #f00;
+	margin:0px auto;
+}
+/*设置header区域的样式*/
+#header{
+	height:30px;
+}
+#header ul li{
+	float:left;
+}
+#header ul li{
+	font-size:16px;
+	border-right:1px solid #000;
+	padding:3px 15px 0px;
+}
+#header .sign{
+	border:none;
+}
+#header .about{
+	border:none;
+}
+#header .shopping_cart span{
+	width:20px;
+	height:15px;
+	display:inline-block;
+	vertical-align:middle;
+	background:url(/static/base/img/shopping_cart.jpg) no-repeat;
+}
+#header li a:hover{
+	color:#F00;
+}
+#header .login a{
+	color:#F00;
+}
+
+
+/* logo、搜索框、购物车样式 */
+#search .search_bar{
+	width:1200px;
+	height:115px;
+	margin:0 auto;
+}
+#search .logo{
+	width:150px;
+	height:59px;
+	margin:29px 0 0 17px;
+}
+
+#search .search_con{
+	width:616px;
+	height:38px;
+	border:1px solid #37ab40;
+	margin:34px 0 0 124px;
+	background:url(../img/icons.png) 10px -338px no-repeat;
+}
+#search .search_con .input_text{
+	width:470px;
+	height:34px;
+	border:0px;
+	margin:2px 0 0 36px;
+	outline:none;
+	font-size:12px;
+	color:#737272;
+	font-family:'Microsoft Yahei'
+}
+
+#search .search_con .input_btn{
+	width:100px;
+	height:38px;
+	background-color:#37ab40;
+	border:0px;
+	font-size:14px;
+	color:#fff;
+	font-family:'Microsoft Yahei';
+	outline:none;
+	cursor:pointer;
+}
+
+#search .guest_cart{
+	width:200px;
+	height:40px;
+	margin-top:34px;
+}
+
+#search .guest_cart .cart_name{
+	width:158px;
+	height:38px;
+	line-height:38px;
+	border:1px solid #dddddd;
+	display:block;
+	background:url(../img/icons.png) 13px -300px no-repeat;
+	font-size:14px;
+	color:#37ab40;text-indent:56px;
+}
+
+#search .guest_cart .goods_count{
+	width:40px;
+	height:40px;
+	text-align:center;
+	line-height:40px;/*设置行高*/
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+	background-color:#ff8800;
+}
+
+
+/*设置footer区域的样式*/
+#footer .foot_link{
+	text-align:center;
+	margin-top:30px;
+}
+#footer .foot_link a,.foot_link span{
+	color:#4e4e4e;
+}
+#footer .foot_link a:hover{
+	color:#ff8800;
+}
+#footer .foot_link span{
+	padding:0 10px;
+}
+#footer p{
+	text-align:center;
+	margin-top:10px;
+}

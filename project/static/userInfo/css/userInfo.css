@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+/*去掉内边距和外边距*/
+*{
+	margin:0;
+	padding:0;
+}
+/*去掉列表的标识*/
+ol,ul{
+	list-style-type:none;
+}
+/*超链接颜色设为黑色，下划线去掉*/
+a{
+	color:#000;
+	text-decoration:none;
+}
+/*左浮动、和右浮动*/
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.container{
+	width:1280px;
+	border:1px solid #f00;
+	margin:0px auto;
+}
+
+
+#userInfo .rightContent{
+	margin-left:300px;
+	margin-top:20px;
+	padding-left:60px;
+	background-color:#f9f9f9;
+	margin-bottom:20px;
+}
+.rightContent ul li{
+	margin-left:30px;
+}

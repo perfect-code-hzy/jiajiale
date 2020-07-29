@@ -1,0 +1,76 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/base.css'%}" />
+	<script type="text/javascript" charset="utf-8" src="{% static 'base/js/jquery-3.4.1.min.js' %}"></script>
+    <script type="text/javascript" charset="utf-8" src="{% static 'base/js/base.js' %}"></script>
+
+    {% block linkscript %}
+    {% endblock linkscript %}
+</head>
+<body>
+	{% block header %}
+	<!--页面的头部-->
+	<div id="header">
+		<div class="container">
+			<hr size="3px" noshade=true color="red"/>
+			<ul class="left">
+				<li class="login"><a href="/login/">{{ username }}</a></li>
+				<li class="sign"><a href="/register/">免费注册</a></li>
+			</ul>
+			<ul class="right">
+				<li class="my_home"><a href="/userInfo/">我的家家乐</a></li>
+				<li class="shopping_cart"><a href="/cart/"><span></span>&nbsp;&nbsp;购物车</a></li>
+				<li class="history"><a href="/userOrder/1/">订单记录</a></li>
+				<li class="logout"><a href="/quit/">注销退出</a></li>
+				<li class="about"><a href="#">关于我们</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--logo和搜索框-->
+    <div id="search">
+        <div class="container">
+			<hr size="3px" noshade=true color="red"/>
+			<div class="search_bar clearfix">
+				<a href="/main/" class="logo left"><img src="/static/base/img/logo.jpg"></a>
+				<div class="search_con left">
+					<input type="text" class="input_text left" name="" placeholder="搜索商品">
+					<input type="button" class="input_btn right" name="" value="搜索">
+				</div>
+				<div class="guest_cart right">
+					<a href="/cart/" class="cart_name left">我的购物车</a>
+					<div class="goods_count left" id="show_count">{{total_count}}</div>
+				</div>
+			</div>
+        </div>
+    </div>
+	{% endblock header %}
+	<div>
+		{% block base %}
+    	{% endblock base %}
+	</div>
+	{% block footer %}
+	<!-- 页面的底部 -->
+	<div id="footer">
+		<div class="container">
+			<hr size="3px" noshade=true color="red"/>
+			<div class="foot_link">
+				<a href="#">关于我们</a>
+				<span>|</span>
+				<a href="#">联系我们</a>
+				<span>|</span>
+				<a href="#">招聘人才</a>
+				<span>|</span>
+				<a href="#">友情链接</a>
+			</div>
+			<p>CopyRight © 2020 西安电子科技大学 All Rights Reserved</p>
+			<p>电话：010-****888    陕ICP备*******8号</p>
+		</div>
+	</div>
+	{% endblock footer %}
+</body>
+</html>

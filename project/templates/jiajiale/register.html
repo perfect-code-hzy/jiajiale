@@ -1,0 +1,63 @@
+{% extends 'jiajiale/base.html' %}
+{% load staticfiles %}
+
+{% block header %}
+{% endblock header %}
+
+{% block linkscript %}
+    <link rel="stylesheet" type="text/css" href="{% static 'register/css/register.css' %}" />
+    <script type="text/javascript" charset="utf-8" src="{% static 'register/js/register.js' %}"></script>
+{% endblock linkscript %}
+
+{% block base %}
+	<div class="register_con">
+		<div class="l_con fl">
+			<a href="/main/" class="reg_logo"><img src="/static/login/img/logo.jpg"></a>
+			<div class="reg_slogan">足不出户  ·  开心每一天</div>
+			<div class="reg_banner"></div>
+		</div>
+
+		<div class="r_con fr">
+			<div class="reg_title clearfix">
+				<h1>用户注册</h1>
+				<a href="/login/">登录</a>
+			</div>
+			<div class="reg_form clearfix">
+				<form method="post" action="/register/" id="check_form">
+					{% csrf_token %}
+					<ul>
+						<li>
+							<label>用户名:</label>
+							<input type="text" name="userAccount" id="user_name">
+							<span class="error_tip">提示信息</span>
+						</li>
+						<li>
+							<label>密码:</label>
+							<input type="password" name="userPassword" id="pwd">
+							<span class="error_tip">提示信息</span>
+						</li>
+						<li>
+							<label>确认密码:</label>
+							<input type="password" name="userPassword1" id="cpwd">
+							<span class="error_tip">提示信息</span>
+						</li>
+						<li>
+							<label>邮箱:</label>
+							<input type="text" name="userMail" id="email">
+							<span class="error_tip">提示信息</span>
+						</li>
+						<li class="agreement">
+							<input type="checkbox" name="allow" id="allow" checked="checked">
+							<label>同意”家家乐用户使用协议“</label>
+							<span class="error_tip2">提示信息</span>
+						</li>
+						<li class="reg_sub">
+							<input type="submit" value="注 册" name="">
+						</li>
+					</ul>
+				</form>
+				{{ errmsg }}
+			</div>
+		</div>
+	</div>
+{% endblock base %}

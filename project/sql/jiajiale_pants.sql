@@ -1,0 +1,10 @@
+INSERT INTO `jiajiale_pants` VALUES (1, '减龄高腰阔腿背带牛仔裤女气质吊带连体', 'static/images/goods/37.jpg', 777, 66, '跳楼大减价，买买买！！！', '上海', 31, '精选', 1, '背带裤', '22211', '11122210');
+INSERT INTO `jiajiale_pants` VALUES (2, '冬天短裤女秋款外穿百搭阔腿高腰毛呢短', 'static/images/goods/42.jpg', 554, 34, '跳楼大减价，买买买！！！', '北京', 81, '精选', 1, '短裤', '22212', '11122211');
+INSERT INTO `jiajiale_pants` VALUES (3, '毛呢短裤女秋冬季2019新款高腰阔腿a字', 'static/images/goods/43.jpg', 311, 221, '跳楼大减价，买买买！！！', '北京', 7, '精选', 1, '短裤', '22212', '11122212');
+INSERT INTO `jiajiale_pants` VALUES (4, '显瘦chic垂感高腰阔腿加长直筒牛仔裤女', 'static/images/goods/46.jpg', 322, 32, '跳楼大减价，买买买！！！', '陕西', 213, '精选', 1, '牛仔裤', '22213', '11122213');
+INSERT INTO `jiajiale_pants` VALUES (5, '花花公子冬季牛仔裤男加绒修身小脚黑色', 'static/images/goods/49.jpg', 343, 21, '跳楼大减价，买买买！！！', '陕西', 65, '精选', 1, '牛仔裤', '22213', '11122214');
+INSERT INTO `jiajiale_pants` VALUES (6, '英爵伦 2019新款秋冬休闲裤 男士直筒', 'static/images/goods/54.jpg', 532, 38, '跳楼大减价，买买买！！！', '河南', 65, '精选', 1, '休闲裤', '22214', '11122215');
+INSERT INTO `jiajiale_pants` VALUES (7, '时髦背带裤韩版宽松套装女坠感阔腿长裤', 'static/images/goods/39.jpg', 425, 12, '跳楼大减价，买买买！！！', '陕西', 12, '精选', 1, '背带裤', '22211', '11122216');
+INSERT INTO `jiajiale_pants` VALUES (8, '秋季款男士牛仔裤男直筒宽松百搭青年休', 'static/images/goods/50.jpg', 124, 21, '跳楼大减价，买买买！！', '河南', 12, '精选', 1, '牛仔裤', '22213', '11122217');
+INSERT INTO `jiajiale_pants` VALUES (9, '宽版大直筒阔腿大码运动裤男加绒卫裤纯', 'static/images/goods/57.jpg', 643, 21, '跳楼大减价，买买买！！', '上海', 308, '精选', 1, '运动裤', '22215', '11122218');
+INSERT INTO `jiajiale_pants` VALUES (10, '冬季加绒运动裤男长裤宽松跑步直筒休闲', 'static/images/goods/59.jpg', 414, 142, '跳楼大减价，买买买！！！', '上海', 14, '精选', 1, '运动裤', '22215', '11122219');
