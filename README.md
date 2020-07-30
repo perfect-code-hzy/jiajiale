@@ -7,3 +7,5 @@ Project based on Django
 ```
 python manage.py runserver
 ```
+
+### Open browser， Enter the URL：http://localhost:8080/main
